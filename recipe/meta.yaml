@@ -1,13 +1,13 @@
 {% set name = "fst-pso" %}
-{% set version = "1.8.1" %}
+{% set version = "1.9.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fst-pso-{{ version }}.tar.gz
-  sha256: b3d16ec27b0b4d36b35b306af40c00cd0b34e5e0a9e30a71ed02490e8954a26a
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: ce77f503f55ccf910b14616ba43cdd8fc3b75c40f1a6efa60826f7e467d6a8df
 
 build:
   noarch: python
